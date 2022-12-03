@@ -1,0 +1,127 @@
+.Horizon__what{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(219, 142, 255, 1) 0%, rgba(10, 239, 233, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(219, 142, 255, 1) 0%, rgba(10, 239, 233, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(219, 142, 255, 1) 0%, rgba(10, 239, 233, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0AEFE9', endColorstr='#DB8EFF', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(219, 142, 255, 1) 0%, rgba(10, 239, 233, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(219, 142, 255, 1) 0%, rgba(10, 239, 233, 1) 100%);
+
+    filter:drop-shadow( 0px 4px 4px rgb(24, 28, 33));
+    border-radius: 12px;
+    margin-left: 1rem;
+    margin-right :1rem;
+    margin-top: 3rem; 
+    margin-bottom: 3rem;
+
+}
+.Horizon__what-feature{
+    display: flex;
+
+}
+.Horizon__what-feature,.Horizon__what-container__feature{
+    margin: 0;
+    
+}
+.Horizon__what-feature,.Horizon__what-container__text{
+    max-width: 700px;
+}
+
+.Horizon__what-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+}
+
+.Horizon__what-heading h1{
+    font-family: var(--font-family);
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 510px;
+    
+}
+.Horizon__what-heading p{
+     font-family: var(--font-family);
+     font-weight: 5000;
+     font-size: 16px;
+     line-height: 30px;
+     color:var(--color-subtext);
+     cursor: pointer;
+}
+.Horizon__what-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem; 
+}
+.Horizon__what-container .Horizon__features-container__feature{
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.Horizon__what-container .Horizon__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .Horizon__whatgpt3-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .Horizon__whatgpt3-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .Horizon__whatgpt3-feature .Horizon__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .Horizon__whatgpt3-feature .Horizon__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .Horizon__whatgpt3-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .Horizon__whatgpt3-container .Horizon__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+    .Horizon__what{
+     padding-left: 2rem;
+    padding-right: 2rem;}
+}
