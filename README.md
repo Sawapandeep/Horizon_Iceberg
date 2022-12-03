@@ -2,7 +2,7 @@
 # Horizon_Iceberg
 a gaming blog site
 
-
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Your_GitHub_Username&theme=blue-green)
 
 some previews :
 ![image](https://user-images.githubusercontent.com/78143025/204569493-26482439-d188-48dc-bf79-90517c633b7f.png)
