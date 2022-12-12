@@ -14,7 +14,7 @@ import { epic, pubg ,steam} from './imports';
       <div>
         <video muted class="vid" loop src={pubg}/><img src={steam} alt="onedrive" style={{ width: '82px',height: '20px' }}/> 
         </div> */}
-        {/* have to do something here */}
+        {/* have to do something here nad here too XD */}
     </div>
    
   )
