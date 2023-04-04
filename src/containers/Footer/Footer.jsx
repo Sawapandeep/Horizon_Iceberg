@@ -52,7 +52,7 @@ import logo from'../../assets/logo.svg';
     </div>
 
     <div className="Horizon__footer-copyright">
-      <p>@2022 Horizon Iceberg. All rights reserved.</p>
+      <p>@2023 Horizon Iceberg. All rights reserved.</p>
     </div>
   </div>
   )
