@@ -126,6 +126,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './blog.css';
 import { Article } from '../../components'; // Import the Article component
+import { formatDistanceToNow } from 'date-fns';
+
+function formatTimestamp(timestamp) {
+  const distance = formatDistanceToNow(new Date(timestamp), { addSuffix: true });
+  return distance;
+}
 
 function Blog() {
   const [newsData, setNewsData] = useState([]);
@@ -156,7 +162,8 @@ function Blog() {
               <Article
                 key={index}
                 imgUrl={item.imageSources[0]} // Use the first image source
-                date={new Date(item.timestamp).toDateString()} // Convert timestamp to date string
+                // date={new Date(item.timestamp).toDateString()} 
+                date={formatTimestamp(item.timestamp)}// Convert timestamp to date string
                 text={item.title}
                 link={item.titleLink} // Pass the link to the Article component
               />
