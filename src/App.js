@@ -9,8 +9,8 @@ const App=()=>{
       {/* <h1>Horizon-Iceberg</h1> */}
       <div className="gradient__bg">
         <Navbar/>
-      </div>
-      <div className="gradient__bg ">
+      {/* </div>
+      <div className="gradient__bg "> */}
         <Header />
       </div>
      
