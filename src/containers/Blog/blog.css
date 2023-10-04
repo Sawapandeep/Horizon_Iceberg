@@ -1,6 +1,8 @@
 .Horizon__blog {
+    font-family: var(--font-family);
     display: flex;
     flex-direction: column;    
+   
 }
 
 .Horizon__blog-heading {
@@ -20,7 +22,7 @@
 .Horizon__blog-container {
     display: flex;
     flex-direction: row;
-   
+    padding-bottom: 2rem;
 }
 
 .Horizon__blog-container_groupA {
@@ -31,7 +33,8 @@
 
 .Horizon__blog-container_groupB {
     flex: 1;
-
+    padding-left: 1rem;
+    padding-right: 1rem;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
@@ -41,6 +44,7 @@
 }
 .Horizon__blog-container_groupB .Horizon__blog-container_article {
     border-radius: 12px;
+    
 }
 .Horizon__blog-container_groupB .Horizon__blog-container_article-image img {
     border-top-left-radius: 12px;

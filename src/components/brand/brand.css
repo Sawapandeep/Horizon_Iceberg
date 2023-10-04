@@ -1,19 +1,87 @@
-.Horizon__brand{
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .Horizon__brand {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.Horizon__brand div{
-    flex:1;
-    max-width: 150px;
+  }
+  
+  .Horizon__brand div {
+    flex: 1;
     min-width: 120px;
-    margin:  1rem;
-
-    display: flex;
+    width: 300px;
+    margin: 0.5rem;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-/* .Horizon__brand img{
-   
-} */
+    background-position: 50%;
+  } 
+  .Horizon__container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: inline-block;
+    width: 150%;
+    height: 400px;
+  }
+  .slider-card {
+    flex-shrink: 0;
+    flex-flow: row;
+    width: 10px;
+    height: 120px;
+    border-radius: 12px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, z-index 0.2s ease, border 0.2s ease ; /* Add border transition */
+  }
+  
+  .slider-card:hover {
+    background-size: 70%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transform: scale(1.05); /* Optional: Slightly scale up on hover */
+    /* border: 2px solid inherit; Add border on hover that inherits item.color */
+  }
+  @media (max-width: 768px) {
+    .Horizon__brand {
+      /* Responsive styles for .Horizon__brand on smaller screens */
+    }
+  
+    .Horizon__container {
+      /* Responsive styles for .Horizon__container on smaller screens */
+    }
+  
+    .slider-card {
+      /* Responsive styles for .slider-card on smaller screens */
+    }
+  }
+/*   
+  .slider-card {
+    flex-shrink: 0;
+    flex-flow: row;
+    width: 10px;
+    height: 120px;
+    border-radius: 12px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    position: relative;
+    Add transition property to .slider-card
+    transition: transform 2s ease, box-shadow 2s ease, filter 2s ease;
+  }
+  
+  .slider-card:hover {
+    background-size: 70%;
+   background-color:  ;
+    z-index: 1;
+    Updated transition time to 2 seconds
+    transition: transform 2s ease, box-shadow 2s ease, filter 2s ease;
+  } */

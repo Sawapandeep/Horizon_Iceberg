@@ -78,6 +78,76 @@
 // }
 
 // export default Blog;
+//!v3
+// import React, { useEffect, useState } from 'react';
+// import axios from 'axios';
+// import './blog.css';
+// import { Article } from '../../components'; // Import the Article component
+// import { formatDistanceToNow } from 'date-fns';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Import React Router components
+// import ScrapedContent from './components/Scraped/ScrapedContent';
+// function formatTimestamp(timestamp) {
+//   const distance = formatDistanceToNow(new Date(timestamp), { addSuffix: true });
+//   return distance;
+// }
+
+// function Blog() {
+//   const [newsData, setNewsData] = useState([]);
+//   const [isLoading, setIsLoading] = useState(true);
+
+//   const fetchData = async () => {
+//     try {
+//       const response = await axios.get('https://trending-gaming-api.onrender.com/fetch');
+//       setNewsData(response.data);
+//       setIsLoading(false);
+//     } catch (error) {
+//       console.error('Error fetching data:', error);
+//     }
+//   }
+
+//   const handlePostClick = (link) => {
+//     // Use React Router history to navigate to the new route
+//     window.location.href = `/scraped?url=${encodeURIComponent(link)}`;
+//   };
+
+//   useEffect(() => {
+//     fetchData();
+//   }, []);
+
+//   return (
+//     <Router> {/* Wrap your component with BrowserRouter */}
+//       <div className="blog-container">
+//         <div className="Horizon__blog-container_groupB">
+//           {isLoading ? (
+//             <p>Loading data...</p>
+//           ) : (
+//             newsData.length > 0 ? (
+//               newsData.map((item, index) => (
+//                 <Article
+//                   key={index}
+//                   imgUrl={item.imageSources[0]}
+//                   date={formatTimestamp(item.timestamp)}
+//                   text={item.title}
+//                   link={item.titleLink}
+//                   handlePostClick={handlePostClick} // Pass handlePostClick as a prop
+//                 />
+//               ))
+//             ) : (
+//               <p>No data available.</p>
+//             )
+//           )}
+//         </div>
+//       </div>
+
+//       <Switch> {/* Define your routes */}
+//         <Route path="/scraped" component={ScrapedContent} />
+//       </Switch>
+//     </Router>
+//   );
+// }
+
+// export default Blog;
+
   //!v2 implementing articles into blog 
   import React, { useEffect, useState } from 'react';
   import axios from 'axios';
@@ -109,7 +179,7 @@
     }, []);
   
     return (
-      <div className="blog-container">
+      <div className="blog-container ">
         <div className="Horizon__blog-container_groupB">
           {isLoading ? ( // Show a loading message when data is being fetched
             <p>Loading data...</p>
