@@ -39,11 +39,11 @@ import logo from'../../assets/logo.svg';
       <div className="Horizon__footer-links_div">
         <h4>Get in touch</h4>
         <a href="https://www.linkedin.com/in/sawapandeep-singh-6984aa243" target="_blank"
-        className="social">
+        className="social" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
         <a href="https://t.me/Horizon_Iceberg" target="_blank"
-        className="social">
+        className="social" rel="noreferrer">
         <FontAwesomeIcon icon={faTelegram} size="2x" />
         </a>
         <p>085-132567</p>
