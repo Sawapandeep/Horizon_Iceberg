@@ -39,19 +39,19 @@
     background-position: center center;
     cursor: pointer;
     position: relative;
-    transition: transform 0.2s ease, box-shadow 0.2s ease-in-out, 
-    /* z-index 0.2s ease-in-out, */
+    padding :1rem;
+    margin: 1rem;
+    /* transition: transform 0.2s ease, box-shadow 0.2s ease-in-out, 
      border 0.2s ease-in-out 
-     ; /* Add border transition */
+     ;  */
   }
   
   .slider-card:hover {
-    /* background-size: 70%; */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    /* z-index: 1; */
-    transform: scale(1.05); /* Optional: Slightly scale up on hover */
-     border: 15px solid; 
-    /*Add border on hover that inherits item.color */
+    
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+    /* transform: scale(1.05);  */
+     /* border: 15px solid;  */
+    
   }
   @media (max-width: 768px) {
     .Horizon__brand {
@@ -63,6 +63,18 @@
     }
   
     .slider-card {
+      flex-shrink: 0;
+      flex-flow: row;
+      width: 10px;
+      height: 120px;
+      border-radius: 12px;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+      position: relative;
+      padding :1rem;
+      margin: 1rem;
       /* Responsive styles for .slider-card on smaller screens */
     }
   }
