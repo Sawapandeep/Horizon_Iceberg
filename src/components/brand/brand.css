@@ -41,63 +41,7 @@
     position: relative;
     padding :1rem;
     margin: 1rem;
-    /* transition: transform 0.2s ease, box-shadow 0.2s ease-in-out, 
-     border 0.2s ease-in-out 
-     ;  */
   }
-  
-  .slider-card:hover {
     
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
-    /* transform: scale(1.05);  */
-     /* border: 15px solid;  */
-    
-  }
-  @media (max-width: 768px) {
-    .Horizon__brand {
-      /* Responsive styles for .Horizon__brand on smaller screens */
-    }
   
-    .Horizon__container {
-      /* Responsive styles for .Horizon__container on smaller screens */
-    }
   
-    .slider-card {
-      flex-shrink: 0;
-      flex-flow: row;
-      width: 10px;
-      height: 120px;
-      border-radius: 12px;
-      background-size: auto;
-      background-repeat: no-repeat;
-      background-position: center center;
-      cursor: pointer;
-      position: relative;
-      padding :1rem;
-      margin: 1rem;
-      /* Responsive styles for .slider-card on smaller screens */
-    }
-  }
-/*   
-  .slider-card {
-    flex-shrink: 0;
-    flex-flow: row;
-    width: 10px;
-    height: 120px;
-    border-radius: 12px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
-    position: relative;
-    Add transition property to .slider-card
-    transition: transform 2s ease, box-shadow 2s ease, filter 2s ease;
-  }
-  
-  .slider-card:hover {
-    background-size: 70%;
-   background-color:  ;
-    z-index: 1;
-    Updated transition time to 2 seconds
-    transition: transform 2s ease, box-shadow 2s ease, filter 2s ease;
-  } */

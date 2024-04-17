@@ -15,7 +15,7 @@ import logo from'../../assets/logo.svg';
     </div>
 <br/>
     <div className="Horizon__footer-btn">
-      <p>Request Early Access</p>
+      <a  href='#home'>Request Early Access</a>
     </div>
 
     <div className="Horizon__footer-links">
@@ -46,7 +46,7 @@ import logo from'../../assets/logo.svg';
         className="social" rel="noreferrer">
         <FontAwesomeIcon icon={faTelegram} size="2x" />
         </a>
-        <p>085-132567</p>
+        <p>7986141152</p>
         <p>info@payme.net</p>
       </div>
     </div>

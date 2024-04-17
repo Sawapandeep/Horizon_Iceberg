@@ -94,7 +94,7 @@ function Blog() {
 
   return (
     <div className="blog-container ">
-      <div className="Horizon__blog-container_groupB">
+      <div className="Horizon__blog-container_groupB" id='blog'>
         {isLoading ? ( // Show the loading animation while data is being fetched
           <div className="loading-container" id="load"> 
           {/* id='load'> */}
