@@ -32,6 +32,7 @@
 }
 
 .Horizon__blog-container_groupB {
+    
     flex: 1;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -42,10 +43,31 @@
 .Horizon__blog-container_groupB p {
     color: azure;
 }
-.Horizon__blog-container_groupB .Horizon__blog-container_article {
+/* .Horizon__blog-container_groupB .Horizon__blog-container_article {
     border-radius: 12px;
     
 }
+.Horizon__blog-container_groupB .Horizon__blog-container_article:hover {
+    cursor:pointer;
+    border-radius: 12px;
+    z-index: 1;
+    box-shadow: 0 0 25px rgba(233, 68, 68, 0.1);
+
+} */
+.Horizon__blog-container_groupB .Horizon__blog-container_article {
+    
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Horizon__blog-container_groupB .Horizon__blog-container_article:hover {
+    cursor:pointer;
+    border-radius: 12px;
+    z-index: 1;
+    transform: scale(1.05); /* Zoom in effect */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.2), 0 0 50px cyan, 0 0 110px hotpink;
+}
+
 .Horizon__blog-container_groupB .Horizon__blog-container_article-image img {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -103,3 +125,7 @@
     }
 
 }
+
+
+
+/* loading css */

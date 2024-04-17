@@ -5,17 +5,22 @@
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
+    border-radius: 12px;
 }
 
 .Horizon__blog-container_article-image {
     width: 100%;
     height: 100%;
     background: var(--color-bg);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .Horizon__blog-container_article-image img {
     width: 100%;
     height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .Horizon__blog-container_article-content {
@@ -33,7 +38,7 @@
     font-weight: 700;
     line-height: 35px;
 
-    color: #fff;
+    color: azure;
 }
 
 .Horizon__blog-container_article-content h3 {
@@ -42,7 +47,7 @@
     font-weight: 800;
     line-height: 30.30px;
     
-    color: #fff;
+    color: azure;
     margin-bottom: 5rem;
     cursor: pointer;
 }
