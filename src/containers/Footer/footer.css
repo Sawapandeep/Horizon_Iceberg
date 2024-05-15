@@ -101,7 +101,8 @@
 }
 
 .Horizon__footer-links_div p {
-    font-size: 12px;
+    font-size: 14px;
+    
     line-height: 15px;
     font-family: var(--font-family);
     color: azure;
@@ -117,7 +118,7 @@
 }
 
 .Horizon__footer-copyright p {
-    font-size: 12px;
+    font-size: 14px;
     font-family: var(--font-family);
     line-height: 15px;
     color:azure;

@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import './footer.css';
 import logo from'../../assets/logo.svg';
+let currentYear = new Date().getFullYear();
  const Footer = () => {
   return (
     <div className="Horizon__footer section__padding">
@@ -52,7 +53,7 @@ import logo from'../../assets/logo.svg';
     </div>
 
     <div className="Horizon__footer-copyright">
-      <p>@2023 Horizon Iceberg. All rights reserved.</p>
+      <p>Copyright © {currentYear} Horizon Iceberg. All rights reserved.</p>
     </div>
   </div>
   )
