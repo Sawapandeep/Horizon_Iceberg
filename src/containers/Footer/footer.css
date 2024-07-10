@@ -80,7 +80,7 @@
 
 .Horizon__footer-links_logo p {
     font-family: var(--font-family);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     color: azure;
 }
@@ -95,7 +95,7 @@
     font-size: 14px;
     line-height: 17px;
     font-family: var(--font-family);
-    color: azure;
+    color:    azure;
 
     margin-bottom: 0.9rem;
 }
